@@ -11,6 +11,7 @@ router.get("/movies", (req, res, next) => {
   Movie.find()
     .then((allTheMoviesFromDB) => {
       res.render("movies.hbs", { movies: allTheMoviesFromDB });
+      console.log(allTheMoviesFromDB);
     })
     .catch((error) => {
       console.log("Error while getting the movies from the DB: ", error);

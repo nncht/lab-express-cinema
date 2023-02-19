@@ -8,6 +8,26 @@ h1 {
   font-size: 7rem;
 }
 
+h2 {
+  font-size: 1.8rem;
+  font-weight: 1000;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+a {
+  color: #00b7ff;
+  font-size: 0.9rem;
+}
+
 .index {
   background-image: url(/images/cinema.jpg);
   background-repeat: no-repeat;
@@ -20,6 +40,24 @@ h1 {
   align-items: center;
 }
 
-a {
-  color: #00b7ff;
+.movies-title-subtitle {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10vw 0px;
+}
+
+.movie-overview {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 4vw;
+  row-gap: 40px;
+  padding: 30px 10vw 100px;
+}
+
+.movie-card {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
